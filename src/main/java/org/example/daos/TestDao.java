@@ -18,16 +18,12 @@ public class TestDao {
 
             ResultSet resultSet = statement.executeQuery(
                     "SHOW DATABASES;");
-
             long end = System.currentTimeMillis();
 
             System.out.println("Total time to execute query in "
                     + "milliseconds: " + (end - start));
-<<<<<<< HEAD
-            System.out.println("Retrieving database names");
-=======
 
->>>>>>> main
+            System.out.println("Retrieving database names");
             while (resultSet.next()) {
                 System.out.println(resultSet.getString("Database"));
                 databases.add(resultSet.getString("Database"));
